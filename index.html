@@ -14,10 +14,10 @@
 
     <title>My portofolio|TiagoGusniawan</title>
   </head>
-  <body>
+  <body id="home">
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">TiagoGusniawan</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,13 +26,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#Gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -46,7 +49,7 @@
     <section class="jumbotron text-center">
       <img src="img/profil.jpg" alt="Tiago Gusniawan" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Tiago Gusniawan</h1>
-      <p class="lead">Mahasiswa | Ordinary People</p>
+      <p class="lead">Student | Ordinary People</p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,0L480,64L960,32L1440,128L1440,320L960,320L480,320L0,320Z"></path></svg>
     </section>
 
@@ -58,15 +61,21 @@
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2>About Me</h2>
+            <h2>ABOUT ME</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-lg-4">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque animi iure at voluptatum rem pariatur dolorem excepturi. Sunt porro corrupti placeat, odio corporis nulla, quae praesentium voluptate quia expedita minima.</p>
+          <div class="col-lg-5">
+            <p>
+              I am a law student at UIN Sayyid Ali Rahmatullah Tulungagung here I describe myself as someone who is very curious about studying in all areas of personal and professional life. In my professional life, I look for problems
+              that are difficult to solve and where I can learn to improve. I have worked on many types of design projects, including advertising, illustration, and graphics.
+            </p>
           </div>
-          <div class="col-lg-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo adipisci sapiente excepturi ipsam, corporis quibusdam dolores esse in voluptate minus nemo harum incidunt vel reiciendis quam quae at, quod expedita.</p>
+          <div class="col-lg-5">
+            <p>
+              In my personal life I spend time studying design and programming. because it is very interesting and very triggers the desire continue to develop creativity. And besides, I'm also like an ordinary student who likes to
+              drink coffee, play games and spend time with my friends.
+            </p>
           </div>
         </div>
       </div>
@@ -77,38 +86,38 @@
 
     <!-- project -->
 
-    <section id="projects">
+    <section id="Gallery">
       <div class="container">
         <div class="row text-center">
           <div class="col">
-            <h2>My Project</h2>
+            <h2>MY GALLERY</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4">
+        <dvi class="row">
+          <div class="col-lg-4 mb-3">
             <div class="card">
               <img src="img/photograph.jpg" class="card-img-top" alt="photograph" />
               <div class="card-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora veniam asperiores sit?</p>
+                <p class="text-center">Logo Desain</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-3">
             <div class="card">
               <img src="img/desain baju.png" class="card-img-top" alt="desain baju" />
               <div class="card-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad, repellendus. Ullam ducimus molestias dolor ut!</p>
+                <p class="text-center">Cloth Desain</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-3">
             <div class="card">
-              <img src="img/kubisme.jpg" class="card-img-top" alt="kubisme" />
+              <img src="img/Screenshot (5).png" class="card-img-top" alt="Screenshot" />
               <div class="card-body">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et ratione cupiditate dicta?</p>
+                <p class="text-center">Web Desain</p>
               </div>
             </div>
-          </div>
+          </dvi>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,64L480,224L960,64L1440,128L1440,320L960,320L480,320L0,320Z"></path></svg>
@@ -118,24 +127,41 @@
 
     <!-- comment -->
 
-    <section id="form">
+    <section id="contact">
       <div class="container form justify-content-center">
         <div class="row justify-content-center text-center mb-3">
-          <h2>Comment</h2>
+          <h2>CONTACT</h2>
+        </div>
+        <div class="form-floating mb-3 text-center">
+          <input type="name" class="form-control" id="floatingInput" placeholder="nameexample" />
+          <label for="floatingInput">Name</label>
         </div>
         <div class="form-floating mb-3 text-center">
           <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
           <label for="floatingInput">Email address</label>
         </div>
-        <div class="form-floating text-center">
+        <div class="form-floating text-center mb-3">
           <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
           <label for="floatingTextarea2">Comments</label>
         </div>
         <button type="submit" class="justify-content-center btn btn-primary text-center">Send</button>
+        
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d2def1" fill-opacity="1" d="M0,64L480,224L960,64L1440,128L1440,320L960,320L480,320L0,320Z"></path></svg>
     </section>
 
     <!-- akhir comment -->
+
+    <!-- footer -->
+    <section id="footer">
+      <div class="row footer">
+        <div class="col text-center">
+          <p>2022 Alright Recerved by<a href="#">TiagoGusniawan</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- akhir footer -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
